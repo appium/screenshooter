@@ -38,6 +38,8 @@
 			<zipgroupfileset file="${swt.lib}" />
 			<zipgroupfileset file="${ddmlib.lib}" />
 			<manifest>
+			    <attribute name="Class-Path"
+			        value="${ddmlib.lib} ${swt.lib}" />
 				<attribute name="Main-Class"
 					value="io.appium.android.screenshooter.ScreenShooter" />
 			</manifest>
