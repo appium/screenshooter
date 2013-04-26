@@ -1,12 +1,12 @@
 ScreenShooter
 =============
 
-ScreenShooter is an open source screen shot application for android that uses
-googles ddmlib and swt.  Primarily made for [Appium](http://github.com/appium/appium)
-but is standalone, and should can be used in any project.
+ScreenShooter is an open source screen shot application for Android that uses
+Google's ddmlib and [Eclipse SWT](http://www.eclipse.org/swt/).  Primarily made for [Appium](http://github.com/appium/appium)
+but is standalone, and can be used in any project.
 
 The code is licensed under the same license as much of the Android sdk; the
-apache 2.0 license.  Much of the code here is not unique and can be found in
+[Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).  Much of the code here is not unique and can be found in
 any of a dozen other projects, but the intent is for it to do one thing, and
 do it well.  Enjoy.
 
