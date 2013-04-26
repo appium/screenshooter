@@ -23,7 +23,6 @@
 
     <target name="-pre-compile" >
 		<path id="project.target.class.path">
-			<fileset dir="lib" includes="*.jar" />
 			<pathelement path="${android.lib}" />
 			<pathelement path="${uiautomator.lib}" />
 			<pathelement path="${ddmlib.lib}" />
