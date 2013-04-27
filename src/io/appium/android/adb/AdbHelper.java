@@ -8,10 +8,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.android.ddmlib.AndroidDebugBridge;
-import com.android.ddmlib.AndroidDebugBridge.IDeviceChangeListener;
 import com.android.ddmlib.IDevice;
 
-public class AdbHelper implements IDeviceChangeListener {
+public class AdbHelper {
   private AndroidDebugBridge adb = null;
 
   public AdbHelper() {
@@ -30,24 +29,6 @@ public class AdbHelper implements IDeviceChangeListener {
 
   public void close() {
     AndroidDebugBridge.terminate();
-  }
-
-  @Override
-  public void deviceChanged(final IDevice device, final int arg1) {
-    Logger.info("Device changed: " + device.getName() + "["
-        + device.getSerialNumber() + "]");
-  }
-
-  @Override
-  public void deviceConnected(final IDevice device) {
-    Logger.info("Device connected: " + device.getName() + "["
-        + device.getSerialNumber() + "]");
-  }
-
-  @Override
-  public void deviceDisconnected(final IDevice device) {
-    Logger.info("Device disconnected: " + device.getName() + "["
-        + device.getSerialNumber() + "]");
   }
 
   public String getAdbLocation() {
